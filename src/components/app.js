@@ -7,6 +7,7 @@ import { Router } from 'preact-router';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 import General from '../routes/general';
+import NewBusiness from '../routes/newBusiness';
 
 export default class App extends Component {
 	
@@ -26,7 +27,8 @@ export default class App extends Component {
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
-					<General path="/general" />
+					<General path="/contact/general" />
+					<NewBusiness path="/contact/new-business" />
 				</Router>
 			</div>
 		);

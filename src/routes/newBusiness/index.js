@@ -5,7 +5,7 @@ import { database } from '../../components/firebase';
 import { Body } from '../../components/typography';
 import { ContactPage, TitleSection, BackLink, ContactTitle, Fieldsets, Labels, RadioContainer, RadioInput, InputContainer, InputLabel, TextArea, TextInput, CheckboxContainer, Checkbox, CheckboxLabel, ConsentSection, PrivacyLink, ButtonSubmit } from '../../components/contactForm';
 
-class General extends Component {
+class NewBusiness extends Component {
 	state = {
 		selected: 'inquiries',
 		message: '',
@@ -27,7 +27,7 @@ class General extends Component {
 	submit = (e) => {
 		e.preventDefault();
 
-		const contactRefs = database.ref('/contacts/general');
+		const contactRefs = database.ref('/contacts/new-business');
 		contactRefs.push({
 			selected: this.state.selected,
 			message: this.state.message,
@@ -58,30 +58,18 @@ class General extends Component {
 			<ContactPage>
 				<TitleSection>
 					<BackLink href="/contact" aria-label="Contact">Back</BackLink>
-					<ContactTitle theme={{ main: `#FFF` }}>General</ContactTitle>
+					<ContactTitle theme={{ main: `#FFF` }}>New Business</ContactTitle>
 				</TitleSection>
 				<form onSubmit={this.submit}>
 					<Fieldsets>
 						<Body theme={{ main: `#FFF` }}>Are you contacting us about</Body>
 						<RadioContainer>
-							<RadioInput type="radio" value="inquiries" id="inquiries" checked={this.state.selected === 'inquiries'} onChange={this.onChange} />
-							<Labels theme={{ main: `#FFF` }} htmlFor="inquiries">Inquiries</Labels>
+							<RadioInput type="radio" value="full_service" id="full_service" checked={this.state.selected === 'full_service'} onChange={this.onChange} />
+							<Labels theme={{ main: `#FFF` }} htmlFor="full_service">Full-service partner</Labels>
 						</RadioContainer>
 						<RadioContainer>
-							<RadioInput type="radio" value="feedbacks" id="feedbacks" checked={this.state.selected === 'feedbacks'} onChange={this.onChange} />
-							<Labels theme={{ main: `#FFF` }} htmlFor="feedbacks">Feedbacks</Labels>
-						</RadioContainer>
-						<RadioContainer>
-							<RadioInput type="radio" value="careers" id="careers" checked={this.state.selected === 'careers'} onChange={this.onChange} />
-							<Labels theme={{ main: `#FFF` }} htmlFor="careers">Careers</Labels>
-						</RadioContainer>
-						<RadioContainer>
-							<RadioInput type="radio" value="collaborations" id="collaborations" checked={this.state.selected === 'collaborations'} onChange={this.onChange} />
-							<Labels theme={{ main: `#FFF` }} htmlFor="collaborations">Collaborations</Labels>
-						</RadioContainer>
-						<RadioContainer>
-							<RadioInput type="radio" value="media" id="media" checked={this.state.selected === 'media'} onChange={this.onChange} />
-							<Labels theme={{ main: `#FFF` }} htmlFor="media">Media Relations</Labels>
+							<RadioInput type="radio" value="project-based" id="project-based" checked={this.state.selected === 'project-based'} onChange={this.onChange} />
+							<Labels theme={{ main: `#FFF` }} htmlFor="project-based">Project-based services</Labels>
 						</RadioContainer>
 					</Fieldsets>
 					<Fieldsets>
@@ -133,4 +121,4 @@ class General extends Component {
 	}
 }
 
-export default General;
+export default NewBusiness;
