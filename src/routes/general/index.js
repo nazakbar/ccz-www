@@ -52,7 +52,6 @@ class General extends Component {
 	
 	render ({}, { message, firstName, lastName, email, company, title, country, interest }) {
 
-		console.log(this.state.selected);
 		return (
 			<div>
 				<form onSubmit={this.submit}>
