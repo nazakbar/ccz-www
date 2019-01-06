@@ -53,8 +53,6 @@ export const ContactTitle = styled(Heading2) `
 	}
 `;
 
-//Could possible have a global label and do customisation under the custom version.
-
 export const Labels = styled.label `
 	font-size: 0.9375rem;
 	font-weight: 400;
