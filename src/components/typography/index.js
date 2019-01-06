@@ -1,6 +1,40 @@
 import styled from 'styled-components';
 
 //All Headings resides here.
+export const Heading1 = styled.h1 `
+	font-size: 12vw;
+	font-weight: 700;
+	line-height: 1.08;
+	letter-spacing: -0.6px;
+	margin: 0;
+	color: #000;
+
+	@media (min-width: 32em) {
+		font-size: 3rem;
+		letter-spacing: -0.76px;
+	}
+
+	@media (min-width: 45em) {
+		font-size: 3.5rem;
+		letter-spacing: -0.88px;
+	}
+
+	@media (min-width: 57em) {
+		font-size: 4rem;
+		letter-spacing: -1.01px;
+	}
+
+	@media (min-width: 75em) {
+		font-size: 5.625rem;
+		letter-spacing: -1.42px;
+	}
+
+	@media (min-width: 112em) {
+		font-size: 7rem;
+		letter-spacing: -1.77px;
+	}
+`;
+
 export const Heading2 = styled.h2 `
 	font-size: 1.25rem;
 	font-weight: 700;

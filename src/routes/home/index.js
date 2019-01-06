@@ -1,10 +1,13 @@
-import { h } from 'preact';
-import style from './style';
+import HeroMain from '../../components/sectionHero/heroMain';
+
+import { title } from './content';
 
 const Home = () => (
-	<div class={style.home}>
-		<h1>Home</h1>
-		<p>This is the Home component.</p>
+	<div>
+		<HeroMain
+			theme={{ main: `#FFF` }}
+			{...title}
+		/>
 	</div>
 );
 
