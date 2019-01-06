@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Link } from 'preact-router/match';
+
 //All Headings resides here.
 export const Heading1 = styled.h1 `
 	font-size: 12vw;
@@ -100,5 +102,35 @@ export const Body = styled.p `
 
 	:last-child {
 		margin-bottom: 0;
+	}
+`;
+
+//All Anchors resides here.
+export const Anchor = styled(Link) `
+	display: inline-flex;
+	flex-direction: column;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -0.28px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+
+	@media (min-width: 45em) {
+		font-size: 1rem;
+		letter-spacing: -0.32px;
+	}
+
+	@media (min-width: 75em) {
+		font-size: 1.125rem;
+		letter-spacing: -0.36px;
+	}
+
+	@media (min-width: 112em) {
+		font-size: 1.25rem;
+		letter-spacing: -0.4px;
 	}
 `;

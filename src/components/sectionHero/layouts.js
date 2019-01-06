@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import MultiLinks from '../multiLinks';
 import { Heading1, Body } from '../typography';
 
 export const PageHero = styled.section `
@@ -22,6 +23,12 @@ export const PageHero = styled.section `
 
 	@media (min-width: 75em) {
 		padding: 0 6em 20vh;
+	}
+
+	> div {
+		@media (min-width: 57em) {
+			margin: 2.875rem 0 0;
+		}
 	}
 `;
 
