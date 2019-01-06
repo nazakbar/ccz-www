@@ -21,3 +21,7 @@ export const introServices = {
 	link: `Our Capabilities`,
 	link1: `Our Process`
 };
+
+export const headlines = {
+	tag: `The real value is derived from the way we serve our customers and the people in our organizations.`
+};

@@ -15,3 +15,8 @@ export const PageSection = styled.section `
 		padding: 24vh 6em;
 	}
 `;
+
+export const PageSectionCentered = styled(PageSection) `
+	align-items: center;
+	justify-content: center;
+`;

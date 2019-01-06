@@ -1,7 +1,8 @@
 import HeroMain from '../../components/sectionHero/heroMain';
 import SectionLinked from '../../components/sectionLinked';
+import Headlines from '../../components/headlines';
 
-import { title, introUs, introServices } from './content';
+import { title, introUs, introServices, headlines } from './content';
 
 const Home = () => (
 	<div>
@@ -16,6 +17,10 @@ const Home = () => (
 		<SectionLinked
 			theme={{ main: `#FFF` }}
 			{...introServices}
+		/>
+		<Headlines
+			theme={{ main: `#FFCA00` }}
+			{...headlines}
 		/>
 	</div>
 );

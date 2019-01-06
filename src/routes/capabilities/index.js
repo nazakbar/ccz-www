@@ -1,12 +1,21 @@
 import SectionHero from '../../components/sectionHero';
+import Headlines from '../../components/headlines';
 
-import { heroShort } from './content';
+import { heroShort, headlinesCards, headlinesCapabilities } from './content';
 
 const Capabilities = () => (
 	<div>
 		<SectionHero
 			theme={{ main: `#FFF` }}
 			heroShort={heroShort}
+		/>
+		<Headlines
+			theme={{ main: `#FFF` }}
+			{...headlinesCards}
+		/>
+		<Headlines
+			theme={{ main: `#FFCA00` }}
+			{...headlinesCapabilities}
 		/>
 	</div>
 );
