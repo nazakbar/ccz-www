@@ -1,9 +1,10 @@
 import SectionHero from '../../components/sectionHero';
 import ServiceIntro from '../../components/serviceIntro';
 import Services from '../../components/serviceList';
+import Cards from '../../components/cards';
 import SectionContact from '../../components/sectionContact';
 
-import { heroShort, pageIntro, serviceListsOdd } from './content';
+import { heroShort, pageIntro, serviceListsOdd, capabilities, capabilities1 } from './content';
 
 const Design = () => (
 	<div>
@@ -17,6 +18,10 @@ const Design = () => (
 		/>
 		<Services
 			serviceListsOdd={serviceListsOdd}
+		/>
+		<Cards
+			capabilities={capabilities}
+			capabilities1={capabilities1}
 		/>
 		<SectionContact
 			theme={{ main: `#FFCA00` }}

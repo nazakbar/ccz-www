@@ -29,3 +29,19 @@ export const serviceListsEven = [
 		brief: `Reimagine a different reality—enhanced or constructed—to tell immersive stories and frame digital spaces. A reality where the audience, suspend their disbelief and feel the sensation of being there. Your start to touchpoint innovation.`
 	}
 ];
+
+export const capabilities = {
+	title: `Strategy`,
+	brief: `We develop purposeful strategies for brands to achieve objectives. A blueprint for progress and quality relationships.`,
+	href: `/capabilities/strategy`,
+	label: `Learn more on our strategy capabilities.`,
+	link: `Learn More`
+};
+
+export const capabilities1 = {
+	title: `Design`,
+	brief: `Cross-functional in nature. We collaborate with you to bring big, bold ideas to life.`,
+	href: `/capabilities/design`,
+	label: `Learn more on our design capabilities.`,
+	link: `Learn More`
+};

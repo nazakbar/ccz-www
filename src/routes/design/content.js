@@ -32,3 +32,19 @@ export const serviceListsOdd = [
 		brief: `Convey ideas in a clear, simple, and effective way. We collaborate with users to test and measure our assumptions throughout a project. The process leads us to learn from the user feedbacks. It empowers our clients to make decisive decisions.`
 	}
 ];
+
+export const capabilities = {
+	title: `Strategy`,
+	brief: `We develop purposeful strategies for brands to achieve objectives. A blueprint for progress and quality relationships.`,
+	href: `/capabilities/strategy`,
+	label: `Learn more on our strategy capabilities.`,
+	link: `Learn More`
+};
+
+export const capabilities1 = {
+	title: `Technology`,
+	brief: `We bring personalization to your customer experiences. Build touchpoints of tomorrow.`,
+	href: `/capabilities/technology`,
+	label: `Learn more on our technology capabilities.`,
+	link: `Learn More`
+};

@@ -1,9 +1,10 @@
 import SectionHero from '../../components/sectionHero';
 import ServiceIntro from '../../components/serviceIntro';
 import Services from '../../components/serviceList';
+import Cards from '../../components/cards';
 import SectionContact from '../../components/sectionContact';
 
-import { heroShort, pageIntro, serviceListsEven } from './content';
+import { heroShort, pageIntro, serviceListsEven, capabilities, capabilities1 } from './content';
 
 const Technology = () => (
 	<div>
@@ -17,6 +18,10 @@ const Technology = () => (
 		/>
 		<Services
 			serviceListsEven={serviceListsEven}
+		/>
+		<Cards
+			capabilities={capabilities}
+			capabilities1={capabilities1}
 		/>
 		<SectionContact
 			theme={{ main: `#FFCA00` }}

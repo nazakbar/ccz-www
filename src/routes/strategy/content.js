@@ -38,3 +38,19 @@ export const serviceListsOdd = [
 		brief: `Our work in design is often the work of designing the future. We synthesize the needs of your customers with the needs and state of your business into potential future scenarios. In practice, our team test the viability of ideas, service concepts, and prototype future service experiences.`
 	}
 ];
+
+export const capabilities = {
+	title: `Design`,
+	brief: `Cross-functional in nature. We collaborate with you to bring big, bold ideas to life.`,
+	href: `/capabilities/design`,
+	label: `Learn more on our design capabilities.`,
+	link: `Learn More`
+};
+
+export const capabilities1 = {
+	title: `Technology`,
+	brief: `We bring personalization to your customer experiences. Build touchpoints of tomorrow.`,
+	href: `/capabilities/technology`,
+	label: `Learn more on our technology capabilities.`,
+	link: `Learn More`
+};
