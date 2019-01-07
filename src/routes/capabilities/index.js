@@ -1,8 +1,9 @@
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
+import CardsMain from '../../components/cards/main';
 import SectionContact from '../../components/sectionContact';
 
-import { heroShort, headlinesCards, headlinesCapabilities } from './content';
+import { heroShort, headlinesCards, headlinesCapabilities, capabilities, capabilities1, capabilities2 } from './content';
 
 const Capabilities = () => (
 	<div>
@@ -13,6 +14,11 @@ const Capabilities = () => (
 		<Headlines
 			theme={{ main: `#FFF` }}
 			{...headlinesCards}
+		/>
+		<CardsMain
+			capabilities={capabilities}
+			capabilities1={capabilities1}
+			capabilities2={capabilities2}
 		/>
 		<Headlines
 			theme={{ main: `#FFCA00` }}

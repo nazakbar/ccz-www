@@ -114,7 +114,7 @@ const title = {
 	title: `See our other capabilities.`
 };
 
-const Cards = ({ title, brief, href, label, link }) => (
+export const Cards = ({ title, brief, href, label, link }) => (
 	<AnchorCards href={href} aria-label={label}>
 		<Heading4 theme={{ main: `#FFF` }}>{title}</Heading4>
 		<Body theme={{ main: `#FFF` }}>{brief}</Body>
