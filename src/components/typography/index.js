@@ -75,6 +75,7 @@ export const Heading3 = styled.h3 `
 	letter-spacing: -0.55px;
 	margin: 0 0 0.5rem;
 	color: ${props => props.theme.main};
+	text-align: ${props => props.theme.align};
 
 	@media (min-width: 22em) {
 		font-size: 1.375rem;
@@ -109,6 +110,7 @@ export const Body = styled.p `
 	letter-spacing: -0.3px;
 	margin: 0 0 1rem;
 	color: ${props => props.theme.main};
+	text-align: ${props => props.theme.align};
 
 	@media (min-width: 22em) {
 		font-size: 1rem;
