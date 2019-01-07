@@ -1,6 +1,7 @@
 import HeroMain from '../../components/sectionHero/heroMain';
 import SectionLinked from '../../components/sectionLinked';
 import Headlines from '../../components/headlines';
+import SectionContact from '../../components/sectionContact';
 
 import { title, introUs, introServices, headlines } from './content';
 
@@ -21,6 +22,9 @@ const Home = () => (
 		<Headlines
 			theme={{ main: `#FFCA00` }}
 			{...headlines}
+		/>
+		<SectionContact
+			theme={{ main: `#FFF` }}
 		/>
 	</div>
 );

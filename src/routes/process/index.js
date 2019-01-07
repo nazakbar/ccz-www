@@ -1,5 +1,6 @@
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
+import SectionContact from '../../components/sectionContact';
 
 import { heroShort, headlinesShort } from './content';
 
@@ -12,6 +13,9 @@ const Process = () => (
 		<Headlines
 			theme={{ main: `#FFCA00` }}
 			headLinesShort={headlinesShort}
+		/>
+		<SectionContact
+			theme={{ main: `#FFF` }}
 		/>
 	</div>
 );
