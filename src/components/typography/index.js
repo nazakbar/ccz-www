@@ -68,6 +68,39 @@ export const Heading2 = styled.h2 `
 	}
 `;
 
+export const Heading3 = styled.h3 `
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -0.55px;
+	margin: 0 0 0.5rem;
+	color: ${props => props.theme.main};
+
+	@media (min-width: 22em) {
+		font-size: 1.375rem;
+		line-height: 1.090909;
+		letter-spacing: -0.6px;
+	}
+
+	@media (min-width: 45em) {
+		font-size: 1.75rem;
+		line-height: 1.142857;
+		letter-spacing: -0.76px;
+	}
+
+	@media (min-width: 75em) {
+		font-size: 2rem;
+		line-height: 1;
+		letter-spacing: -0.87px
+	}
+
+	@media (min-width: 112em) {
+		font-size: 2.5rem;
+		letter-spacing: -1.09px;
+		margin: 0 0 1rem 0;
+	}
+`;
+
 //All Body resides here.
 export const Body = styled.p `
 	font-size: 0.9375rem;
