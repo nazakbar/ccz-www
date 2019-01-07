@@ -16,6 +16,10 @@ export const PageSection = styled.section `
 	}
 `;
 
+/**TODO
+ * Combine this back into PageSection as Heading 3 did using props.
+ * Make sure all other components dependent on this are checked and changed as well before moving forward.
+ */
 export const PageSectionCentered = styled(PageSection) `
 	align-items: center;
 	justify-content: center;

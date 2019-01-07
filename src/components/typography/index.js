@@ -110,7 +110,6 @@ export const Body = styled.p `
 	letter-spacing: -0.3px;
 	margin: 0 0 1rem;
 	color: ${props => props.theme.main};
-	text-align: ${props => props.theme.align};
 
 	@media (min-width: 22em) {
 		font-size: 1rem;
@@ -137,6 +136,22 @@ export const Body = styled.p `
 
 	:last-child {
 		margin-bottom: 0;
+	}
+`;
+
+export const BodyCentered = styled(Body) `
+	text-align: center;
+
+	@media (min-width: 57em) {
+		margin: 0 calc(((100vw - 28rem) / 12) + 2rem) 1.25rem;
+	}
+
+	@media (min-width: 75em) {
+		margin: 0 calc((((100vw - 78rem) / 12) * 2) + 12rem) 1.5rem;
+	}
+
+	@media (min-width: 112em) {
+		margin: 0 calc((((100vw - 78rem) / 12) * 2) + 12rem) 2rem;
 	}
 `;
 
