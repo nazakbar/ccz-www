@@ -1,9 +1,10 @@
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
 import PageIntro from '../../components/pageIntro';
+import ProcessPhases from '../../components/processPhases';
 import SectionContact from '../../components/sectionContact';
 
-import { heroShort, headlinesShort, centeredIntro } from './content';
+import { heroShort, headlinesShort, centeredIntro, phase1, phase2, phase3, phase4, phase5, phase2Lists, phase3Lists } from './content';
 
 const Process = () => (
 	<div>
@@ -18,6 +19,16 @@ const Process = () => (
 		<PageIntro
 			theme={{ main: `#FFF` }}
 			centeredIntro={centeredIntro}
+		/>
+		<ProcessPhases
+			theme={{ align: `center` }}
+			phase1={phase1}
+			phase2={phase2}
+			phase3={phase3}
+			phase4={phase4}
+			phase5={phase5}
+			phase2Lists={phase2Lists}
+			phase3Lists={phase3Lists}
 		/>
 		<SectionContact
 			theme={{ main: `#FFF` }}

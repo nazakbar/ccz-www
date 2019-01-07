@@ -24,3 +24,15 @@ export const PageSectionCentered = styled(PageSection) `
 	align-items: center;
 	justify-content: center;
 `;
+
+export const PageCenteredShort = styled(PageSectionCentered) `
+	padding: 0 1.5em 24vh;
+
+	@media (min-width: 45em) {
+		padding: 0 3em 24vh;
+	}
+
+	@media (min-width: 75em) {
+		padding: 0 6em 24vh;
+	}
+`;
