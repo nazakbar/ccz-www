@@ -1,8 +1,9 @@
 import SectionHero from '../../components/sectionHero';
 import ServiceIntro from '../../components/serviceIntro';
+import Services from '../../components/serviceList';
 import SectionContact from '../../components/sectionContact';
 
-import { heroShort, pageIntro } from './content';
+import { heroShort, pageIntro, serviceListsEven } from './content';
 
 const Technology = () => (
 	<div>
@@ -13,6 +14,9 @@ const Technology = () => (
 		<ServiceIntro
 			theme={{ main: `#FFF` }}
 			{...pageIntro}
+		/>
+		<Services
+			serviceListsEven={serviceListsEven}
 		/>
 		<SectionContact
 			theme={{ main: `#FFCA00` }}
