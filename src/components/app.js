@@ -13,7 +13,6 @@ import Design from '../routes/design';
 import Technology from '../routes/technology';
 import Company from '../routes/company';
 import Process from '../routes/process';
-import Profile from '../routes/profile';
 import PrivacyPolicy from '../routes/privacyPolicy';
 import TermsOfUse from '../routes/termsOfUse';
 import Contact from '../routes/contact';
@@ -59,8 +58,6 @@ export default class App extends Component {
 					<Technology path="/capabilities/technology" />
 					<Company path="/company" />
 					<Process path="/process" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
 					<PrivacyPolicy path="/privacy-policy" />
 					<TermsOfUse path="/terms-of-use" />
 					<Contact path="/contact" />
