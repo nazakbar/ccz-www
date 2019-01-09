@@ -8,7 +8,7 @@ import { ContactPage, TitleSection, BackLink, ContactTitle, Fieldsets, Labels, R
 
 class NewBusiness extends Component {
 	state = {
-		selected: 'inquiries',
+		selected: 'full_service',
 		message: '',
 		firstName: '',
 		lastName: '',
