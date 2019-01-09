@@ -30,12 +30,12 @@ const SocialLink = styled.a `
 	color: #FFF;
 `;
 
-const SocialLinks = () => (
+const SocialLinks = ({ onDismiss }) => (
 	<SocialContainer>
 		<SocialTitle>Follow Us</SocialTitle>
-		<SocialLink href="https://linkedin.com/company/concrezan/" aria-label="Linkedin" target="_black" rel="noopener">IN</SocialLink>
-		<SocialLink href="https://twitter.com/concrezan/" aria-label="Twitter" target="_black" rel="noopener">TW</SocialLink>
-		<SocialLink href="https://www.instagram.com/concrezan/" aria-label="Instagram" target="_black" rel="noopener">IG</SocialLink>
+		<SocialLink href="https://linkedin.com/company/concrezan/" aria-label="Linkedin" target="_black" rel="noopener" onClick={onDismiss}>IN</SocialLink>
+		<SocialLink href="https://twitter.com/concrezan/" aria-label="Twitter" target="_black" rel="noopener" onClick={onDismiss}>TW</SocialLink>
+		<SocialLink href="https://www.instagram.com/concrezan/" aria-label="Instagram" target="_black" rel="noopener" onClick={onDismiss}>IG</SocialLink>
 	</SocialContainer>
 );
 

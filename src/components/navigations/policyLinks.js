@@ -18,10 +18,10 @@ const PolicyLink = styled(Link) `
 	color: #FFF;
 `;
 
-const PolicyLinks = ({}) => (
+const PolicyLinks = ({ onDismiss }) => (
 	<PolicyContainer>
-		<PolicyLink href="/terms-of-use" aria-label="terms of use">Terms of Use</PolicyLink>
-		<PolicyLink href="/privacy-policy" aria-label="privacy policy">Privacy Policy</PolicyLink>
+		<PolicyLink href="/terms-of-use" aria-label="terms of use" onClick={onDismiss}>Terms of Use</PolicyLink>
+		<PolicyLink href="/privacy-policy" aria-label="privacy policy" onClick={onDismiss}>Privacy Policy</PolicyLink>
 	</PolicyContainer>
 );
 
