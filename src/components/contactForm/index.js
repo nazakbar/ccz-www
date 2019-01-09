@@ -5,8 +5,12 @@ import { bodyFonts } from '../../utils/fonts';
 import { Heading2 } from '../typography';
 
 export const ContactPage = styled.div `
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	padding: 88px 24px;
+	z-index: 30;
 	background: #07005A;
 
 	@media (min-width: 45em) {

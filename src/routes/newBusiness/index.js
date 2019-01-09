@@ -2,6 +2,7 @@ import { Component } from 'preact';
 import linkState from 'linkstate';
 import { database } from '../../components/firebase';
 
+import BackIcon from '../../components/backIcon';
 import { Body } from '../../components/typography';
 import { ContactPage, TitleSection, BackLink, ContactTitle, Fieldsets, Labels, RadioContainer, RadioInput, InputContainer, InputLabel, TextArea, TextInput, CheckboxContainer, Checkbox, CheckboxLabel, ConsentSection, PrivacyLink, ButtonSubmit } from '../../components/contactForm';
 
@@ -57,7 +58,7 @@ class NewBusiness extends Component {
 		return (
 			<ContactPage>
 				<TitleSection>
-					<BackLink href="/contact" aria-label="Contact">Back</BackLink>
+					<BackLink href="/contact" aria-label="Contact"><BackIcon />Back</BackLink>
 					<ContactTitle theme={{ main: `#FFF` }}>New Business</ContactTitle>
 				</TitleSection>
 				<form onSubmit={this.submit}>
