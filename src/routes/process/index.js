@@ -3,6 +3,7 @@ import Headlines from '../../components/headlines';
 import PageIntro from '../../components/pageIntro';
 import ProcessPhases from '../../components/processPhases';
 import SectionContact from '../../components/sectionContact';
+import Footer from '../../components/footer';
 
 import { heroShort, headlinesShort, centeredIntro, phase1, phase2, phase3, phase4, phase5, phase2Lists, phase3Lists } from './content';
 
@@ -31,6 +32,9 @@ const Process = () => (
 			phase3Lists={phase3Lists}
 		/>
 		<SectionContact
+			theme={{ main: `#FFF` }}
+		/>
+		<Footer
 			theme={{ main: `#FFF` }}
 		/>
 	</div>

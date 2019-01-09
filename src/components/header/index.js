@@ -10,6 +10,8 @@ import SocialLinks from '../navigations/socialLinks';
 import PageLinks from '../navigations/pageLinks';
 import PolicyLinks from '../navigations/policyLinks';
 
+const Pages = styled(PageLinks) ``;
+
 const HeaderContainer = styled.header `
 	display: flex;
 	position: fixed;
@@ -23,6 +25,17 @@ const HeaderContainer = styled.header `
 
 	@media (min-width: 57em) {
 		justify-content: space-between;
+	}
+
+	${Pages} {
+		display: none;
+
+		@media (min-width: 57em) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: no-wrap;
+			padding: 12px 24px;
+		}
 	}
 `;
 
@@ -87,6 +100,7 @@ class Header extends Component {
 					<PageLinks onDismiss={this.dismiss} />
 					<PolicyLinks onDismiss={this.dismiss} />
 				</Navigations>
+				<Pages />
 			</HeaderContainer>
 		);
 	}

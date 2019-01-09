@@ -3,6 +3,7 @@ import Headlines from '../../components/headlines';
 import SectionPurpose from '../../components/sectionPurpose';
 import SectionPrinciples from '../../components/sectionPrinciples';
 import SectionContact from '../../components/sectionContact';
+import Footer from '../../components/footer';
 
 import { heroLong, headlinesShort, purpose, principles } from './content';
 
@@ -25,6 +26,9 @@ const Company = () => (
 			{...principles}
 		/>
 		<SectionContact
+			theme={{ main: `#FFF` }}
+		/>
+		<Footer
 			theme={{ main: `#FFF` }}
 		/>
 	</div>

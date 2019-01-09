@@ -22,7 +22,7 @@ const NavContainer = styled.nav `
 const PageLink = styled(Link) `
 	display: inline-block;
 	height: 2rem;
-	line-height: 1;
+	line-height: 1.6;
 	margin: 0.5rem 0;
 	text-align: center;
 	text-decoration: none;
