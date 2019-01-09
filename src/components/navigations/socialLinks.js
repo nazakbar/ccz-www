@@ -1,4 +1,3 @@
-import { Link } from 'preact-router/match';
 import styled from 'styled-components';
 
 const SocialContainer = styled.section `
@@ -21,7 +20,7 @@ const SocialTitle = styled.p `
 	color: #FFF;
 `;
 
-const SocialLink = styled(Link) `
+const SocialLink = styled.a `
 	flex-grow: 1;
 	line-height: 1.5;
 	text-align: center;
@@ -34,9 +33,9 @@ const SocialLink = styled(Link) `
 const SocialLinks = () => (
 	<SocialContainer>
 		<SocialTitle>Follow Us</SocialTitle>
-		<SocialLink href="/" aria-label="Linkedin">IN</SocialLink>
-		<SocialLink href="/" aria-label="Twitter">TW</SocialLink>
-		<SocialLink href="/" aria-label="Instagram">IG</SocialLink>
+		<SocialLink href="https://linkedin.com/company/concrezan/" aria-label="Linkedin" target="_black" rel="noopener">IN</SocialLink>
+		<SocialLink href="https://twitter.com/concrezan/" aria-label="Twitter" target="_black" rel="noopener">TW</SocialLink>
+		<SocialLink href="https://www.instagram.com/concrezan/" aria-label="Instagram" target="_black" rel="noopener">IG</SocialLink>
 	</SocialContainer>
 );
 
