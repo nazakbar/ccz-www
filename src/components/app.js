@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
+import Helmet from 'preact-helmet';
 
 import Header from './header';
 import Menu from './menu';
@@ -32,6 +33,22 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
+				<Helmet
+					title="Concrezan | A brand experience and service design company."
+					meta={[{
+						name: 'description',
+						content: `Concrezan is a brand experience and service design company specializing in brand, service, and innovation.`
+					}]}
+					link={[
+						{
+							rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'
+						}, {
+							rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'
+						}, {
+							rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'
+						}
+					]}
+				/>
 				<Header />
 				<Menu />
 				<Router onChange={this.handleRoute}>

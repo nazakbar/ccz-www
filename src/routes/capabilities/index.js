@@ -1,3 +1,4 @@
+import Helmet from 'preact-helmet';
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
 import CardsMain from '../../components/cards/main';
@@ -8,6 +9,13 @@ import { heroShort, headlinesCards, headlinesCapabilities, capabilities, capabil
 
 const Capabilities = () => (
 	<div>
+		<Helmet
+			title="Capabilities | Strategy, Design and Technology."
+			meta={[{
+				name: 'description',
+				content: `Our method defines design challenges at the level of the whole service system.`
+			}]}
+		/>
 		<SectionHero
 			theme={{ main: `#FFF` }}
 			heroShort={heroShort}

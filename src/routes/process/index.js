@@ -1,3 +1,4 @@
+import Helmet from 'preact-helmet';
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
 import PageIntro from '../../components/pageIntro';
@@ -9,6 +10,13 @@ import { heroShort, headlinesShort, centeredIntro, phase1, phase2, phase3, phase
 
 const Process = () => (
 	<div>
+		<Helmet
+			title="Our Process | We help you move closer to your goals."
+			meta={[{
+				name: 'description',
+				content: `Your choice of goals will determine your direction. Using a phased model, we diagnose problems, design a plan, and push through to completion.`
+			}]}
+		/>
 		<SectionHero
 			theme={{ main: `#FFF` }}
 			heroShort={heroShort}

@@ -1,3 +1,4 @@
+import Helmet from 'preact-helmet';
 import SectionHero from '../../components/sectionHero';
 import Headlines from '../../components/headlines';
 import SectionPurpose from '../../components/sectionPurpose';
@@ -9,6 +10,13 @@ import { heroLong, headlinesShort, purpose, principles } from './content';
 
 const Company = () => (
 	<div>
+		<Helmet
+			title="Our Company | A brand experience and service design company."
+			meta={[{
+				name: 'description',
+				content: `Concrezan's focus is to help organizations reinforce in the face of change, discover a new purpose, and shape a better future.`
+			}]}
+		/>
 		<SectionHero
 			theme={{ main: `#FFF` }}
 			{...heroLong}

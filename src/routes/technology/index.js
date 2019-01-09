@@ -1,3 +1,4 @@
+import Helmet from 'preact-helmet';
 import SectionHero from '../../components/sectionHero';
 import ServiceIntro from '../../components/serviceIntro';
 import Services from '../../components/serviceList';
@@ -9,6 +10,13 @@ import { heroShort, pageIntro, serviceListsEven, capabilities, capabilities1 } f
 
 const Technology = () => (
 	<div>
+		<Helmet
+			title="Technology | Build frictionless and cohesive experiences for your users."
+			meta={[{
+				name: 'description',
+				content: `The team at Concrezan employs a blend of rapid prototyping and phased model. We enhance and personalize your touchpoints across many tech verticals.`
+			}]}
+		/>
 		<SectionHero
 			theme={{ main: `#FFCA00` }}
 			heroShort={heroShort}
