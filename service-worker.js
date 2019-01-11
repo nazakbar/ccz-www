@@ -6,6 +6,13 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
+	/\.(?:js|css)$/,
+	workbox.strategies.staleWhileRevalidate({
+		cacheName: 'static-resources'
+	})
+);
+
+workbox.routing.registerRoute(
 	/\.(?:png|gif|jpg|jpeg|svg)$/,
 	workbox.strategies.cacheFirst({
 		cacheName: 'images',
