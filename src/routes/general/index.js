@@ -1,4 +1,5 @@
 import { Component } from 'preact';
+import Helmet from 'preact-helmet';
 import linkState from 'linkstate';
 import { database } from '../../components/firebase';
 
@@ -57,6 +58,13 @@ class General extends Component {
 
 		return (
 			<ContactPage>
+				<Helmet
+					title="Contact Us | General"
+					meta={[{
+						name: 'description',
+						content: `Get to know more about what we're doing or just say hello. Use the fields below and we'll get your inquiries to the right person.`
+					}]}
+				/>
 				<TitleSection>
 					<BackLink href="/contact" aria-label="Contact"><BackIcon />Back</BackLink>
 					<ContactTitle theme={{ main: `#FFF` }}>General</ContactTitle>

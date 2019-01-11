@@ -1,4 +1,5 @@
 import { Component } from 'preact';
+import Helmet from 'preact-helmet';
 import linkState from 'linkstate';
 import { database } from '../../components/firebase';
 
@@ -57,6 +58,13 @@ class NewBusiness extends Component {
 
 		return (
 			<ContactPage>
+				<Helmet
+					title="Contact Us | New Business"
+					meta={[{
+						name: 'description',
+						content: `If you want to transform your business, you're in the right place. Use the fields below and we'll get your inquiries to the right person.`
+					}]}
+				/>
 				<TitleSection>
 					<BackLink href="/contact" aria-label="Contact"><BackIcon />Back</BackLink>
 					<ContactTitle theme={{ main: `#FFF` }}>New Business</ContactTitle>

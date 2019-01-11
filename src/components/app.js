@@ -33,7 +33,7 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Helmet
-					title="Concrezan | A brand experience and service design company."
+					defaultTitle="Concrezan | A brand experience and service design company."
 					meta={[{
 						name: 'description',
 						content: `Concrezan is a brand experience and service design company specializing in brand, service, and innovation.`

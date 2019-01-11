@@ -1,3 +1,4 @@
+import Helmet from 'preact-helmet';
 import SectionHero from '../../components/sectionHero';
 import PageIntro from '../../components/pageIntro';
 import InfoTypeIntro from '../../components/sectionPrivacy/infoTypeIntro';
@@ -10,6 +11,13 @@ import { heroShort, privacyIntro, infoTypeIntro, givenTitle, infoTypeGiven, auto
 
 const PrivacyPolicy = () => (
 	<div>
+		<Helmet
+			title="Concrezan | Privacy Policy"
+			meta={[{
+				name: 'description',
+				content: `This Privacy Policy describes how we collect, use, process, and disclose your information, including personal information, in conjunction with your access to and use of the Site.`
+			}]}
+		/>
 		<SectionHero
 			theme={{ main: `#FFF` }}
 			heroShort={heroShort}
